@@ -1,0 +1,23 @@
+Documents
+   ↓
+Chunks
+   ↓
+Embeddings
+   ↓
+Vectors
+   ↓
+Vector DB
+   ↓
+User Query
+   ↓
+Query Embedding
+   ↓
+Similarity Search
+   ↓
+Relevant Chunks
+   ↓
+Prompt + Context
+   ↓
+Transformer / LLM
+   ↓
+Answer
