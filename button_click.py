@@ -7,11 +7,21 @@ with sync_playwright() as p:
     try:
         page.goto(
             "https://bharathiraja2806.github.io/MyPortfolio/",
-            wait_until="networkidle"
+            wait_until="domcontentloaded",
+            timeout=60000
         )
 
+        print("Page loaded successfully")
+
         page.get_by_role("link", name="Skills").click()
-        page.get_by_role("link", name="Contact", exact=True).click()
+
+        page.wait_for_timeout(2000)
+
+        page.get_by_role(
+            "link",
+            name="Contact",
+            exact=True
+        ).click()
 
         input("Press Enter to close the browser...")
 
